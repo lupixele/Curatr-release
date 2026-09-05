@@ -1,0 +1,28 @@
+# Data files (large CSVs)
+data/raw/
+data/clean_titles.csv
+data/baselines.json
+data/scored_titles.csv
+data/genre_year.csv
+
+# Environment / secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
