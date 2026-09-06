@@ -9,11 +9,11 @@ Curatr analyzes movie and TV show ratings across 2014–2023 using two complemen
 
 ## Setup
 
-```bash
+```powershell
 git clone https://github.com/lupixele/curatr-release.git
 cd curatr-release
 python -m venv .venv
-.venv\Scripts\activate      # Windows
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -25,7 +25,7 @@ Download from Kaggle (free account) and place in `data/raw/`:
 
 ## Run
 
-```bash
+```powershell
 python prepare_data.py          # Clean raw CSVs
 python scoring.py               # Compute baselines and scores
 python trends.py                # Build genre-year trend data
