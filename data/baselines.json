@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "reference_years": [
+    2014,
+    2023
+  ],
+  "source_note": "asaniczka full TMDb movies/tv datasets",
+  "movie": {
+    "C": 6.3804,
+    "m": 1.0,
+    "title_count": 101023,
+    "genres": {
+      "Action": {
+        "raw_mean": 6.3259,
+        "count": 7974,
+        "baseline": 6.3259,
+        "fallback": false
+      },
+      "Adventure": {
+        "raw_mean": 6.5859,
+        "count": 3973,
+        "baseline": 6.5859,
+        "fallback": false
+      },
+      "Animation": {
+        "raw_mean": 6.8031,
+        "count": 6133,
+        "baseline": 6.8031,
+        "fallback": false
+      },
+      "Comedy": {
+        "raw_mean": 6.2135,
+        "count": 23352,
+        "baseline": 6.2135,
+        "fallback": false
+      },
+      "Crime": {
+        "raw_mean": 6.2626,
+        "count": 5427,
+        "baseline": 6.2626,
+        "fallback": false
+      },
+      "Documentary": {
+        "raw_mean": 6.919,
+        "count": 23216,
+        "baseline": 6.919,
+        "fallback": false
+      },
+      "Drama": {
+        "raw_mean": 6.2667,
+        "count": 36034,
+        "baseline": 6.2667,
+        "fallback": false
+      },
+      "Family": {
+        "raw_mean": 6.503,
+        "count": 4799,
+        "baseline": 6.503,
+        "fallback": false
+      },
+      "Fantasy": {
+        "raw_mean": 6.5002,
+        "count": 4238,
+        "baseline": 6.5002,
+        "fallback": false
+      },
+      "History": {
+        "raw_mean": 6.8928,
+        "count": 3107,
+        "baseline": 6.8928,
+        "fallback": false
+      },
+      "Horror": {
+        "raw_mean": 5.7306,
+        "count": 10866,
+        "baseline": 5.7306,
+        "fallback": false
+      },
+      "Music": {
+        "raw_mean": 7.5259,
+        "count": 6063,
+        "baseline": 7.5259,
+        "fallback": false
+      },
+      "Mystery": {
+        "raw_mean": 6.3739,
+        "count": 4349,
+        "baseline": 6.3739,
+        "fallback": false
+      },
+      "Romance": {
+        "raw_mean": 6.1344,
+        "count": 9815,
+        "baseline": 6.1344,
+        "fallback": false
+      },
+      "Science Fiction": {
+        "raw_mean": 6.1481,
+        "count": 4679,
+        "baseline": 6.1481,
+        "fallback": false
+      },
+      "TV Movie": {
+        "raw_mean": 6.3484,
+        "count": 5048,
+        "baseline": 6.3484,
+        "fallback": false
+      },
+      "Thriller": {
+        "raw_mean": 5.9732,
+        "count": 11770,
+        "baseline": 5.9732,
+        "fallback": false
+      },
+      "War": {
+        "raw_mean": 6.7897,
+        "count": 1264,
+        "baseline": 6.7897,
+        "fallback": false
+      },
+      "Western": {
+        "raw_mean": 6.2136,
+        "count": 447,
+        "baseline": 6.2136,
+        "fallback": false
+      }
+    }
+  },
+  "tv": {
+    "C": 6.9219,
+    "m": 1.0,
+    "title_count": 26172,
+    "genres": {
+      "Action & Adventure": {
+        "raw_mean": 7.2144,
+        "count": 2256,
+        "baseline": 7.2144,
+        "fallback": false
+      },
+      "Animation": {
+        "raw_mean": 6.9246,
+        "count": 2942,
+        "baseline": 6.9246,
+        "fallback": false
+      },
+      "Comedy": {
+        "raw_mean": 6.8925,
+        "count": 6754,
+        "baseline": 6.8925,
+        "fallback": false
+      },
+      "Crime": {
+        "raw_mean": 7.0314,
+        "count": 2992,
+        "baseline": 7.0314,
+        "fallback": false
+      },
+      "Documentary": {
+        "raw_mean": 7.1351,
+        "count": 5122,
+        "baseline": 7.1351,
+        "fallback": false
+      },
+      "Drama": {
+        "raw_mean": 6.9678,
+        "count": 10605,
+        "baseline": 6.9678,
+        "fallback": false
+      },
+      "Family": {
+        "raw_mean": 7.0414,
+        "count": 1558,
+        "baseline": 7.0414,
+        "fallback": false
+      },
+      "History": {
+        "raw_mean": 7.6571,
+        "count": 7,
+        "baseline": 6.9219,
+        "fallback": true
+      },
+      "Kids": {
+        "raw_mean": 6.8099,
+        "count": 840,
+        "baseline": 6.8099,
+        "fallback": false
+      },
+      "Musical": {
+        "raw_mean": 7.268,
+        "count": 1,
+        "baseline": 6.9219,
+        "fallback": true
+      },
+      "Mystery": {
+        "raw_mean": 7.0463,
+        "count": 2255,
+        "baseline": 7.0463,
+        "fallback": false
+      },
+      "News": {
+        "raw_mean": 6.7848,
+        "count": 160,
+        "baseline": 6.7848,
+        "fallback": false
+      },
+      "Reality": {
+        "raw_mean": 6.7997,
+        "count": 3364,
+        "baseline": 6.7997,
+        "fallback": false
+      },
+      "Romance": {
+        "raw_mean": 6.4323,
+        "count": 61,
+        "baseline": 6.4323,
+        "fallback": false
+      },
+      "Sci-Fi & Fantasy": {
+        "raw_mean": 7.1081,
+        "count": 2226,
+        "baseline": 7.1081,
+        "fallback": false
+      },
+      "Soap": {
+        "raw_mean": 6.2554,
+        "count": 457,
+        "baseline": 6.2554,
+        "fallback": false
+      },
+      "Talk": {
+        "raw_mean": 6.6963,
+        "count": 783,
+        "baseline": 6.6963,
+        "fallback": false
+      },
+      "War & Politics": {
+        "raw_mean": 7.4292,
+        "count": 495,
+        "baseline": 7.4292,
+        "fallback": false
+      },
+      "Western": {
+        "raw_mean": 6.4631,
+        "count": 51,
+        "baseline": 6.4631,
+        "fallback": false
+      }
+    }
+  }
+}
