@@ -1,211 +1,152 @@
-"""
-tmdb_client.py — Live TMDb API client for Curatr.
-Owner: Vivek
-Consumer: Ratan (app.py)
-
-Provides:
-    search_titles(query, media_type, page=1) -> dict
-    fetch_title(tmdb_id, media_type)         -> dict
-
-Authentication:
-    Reads TMDB_TOKEN from environment variable (never hardcoded).
-    Set it in PowerShell before running:
-        $env:TMDB_TOKEN = Read-Host "Enter TMDB token" -MaskInput
-
-Contract:
-    See docs/members/03-vivek-data-and-api.md and
-    docs/03-data-and-function-contracts.md for full schema.
-"""
-
 import os
-import re
+import requests
 from datetime import datetime, timezone
 
-import requests
+BASE_URL = "https://api.themoviedb.org/3"
 
-
-# ---------------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------------
-
-TMDB_BASE = "https://api.themoviedb.org/3"
-TIMEOUT   = 10  # seconds
-
-VALID_MEDIA_TYPES = {"movie", "tv"}
-
-
-# ---------------------------------------------------------------------------
-# Internal helpers
-# ---------------------------------------------------------------------------
-
-def _get_token() -> str:
-    """Read TMDB_TOKEN from environment. Raises RuntimeError if missing."""
+def get_token():
+    """Reads TMDb token from environment. Never hardcode it!"""
     token = os.environ.get("TMDB_TOKEN")
     if not token:
-        raise RuntimeError(
-            "TMDB_TOKEN environment variable is not set. "
-            "Set it in PowerShell:\n"
-            '    $env:TMDB_TOKEN = Read-Host "Enter TMDB token" -MaskInput'
-        )
+        raise ValueError("TMDB_TOKEN environment variable is not set.")
     return token
 
-
-def _headers() -> dict:
-    """Build Authorization Bearer headers for TMDb v3 API."""
-    return {
-        "Authorization": f"Bearer {_get_token()}",
-        "accept": "application/json",
-    }
-
-
-def sanitize_error(msg: str) -> str:
+def normalize_result(raw, media_type):
     """
-    Remove any Bearer token values from error message strings so secrets
-    are never leaked in exception tracebacks or logs.
+    Converts a raw TMDb API result into the same dictionary
+    format as clean_titles.csv so score_title() can use it directly.
     """
-    return re.sub(r"(Bearer\s+)[A-Za-z0-9_\-\.]+", r"\1[MASKED]", str(msg))
-
-
-def _normalize_details(raw_json: dict, media_type: str) -> dict:
-    """
-    Normalize a TMDb details JSON payload into the Curatr contract dict.
-
-    Adds 'fetched_at' ISO timestamp (UTC).
-    Retains vote_count == 0 so Lochan's score_title() can flag 'unrated'.
-    """
-    # Title field differs by media type
+    # Title field differs between movies and TV
     if media_type == "movie":
-        title    = raw_json.get("title", "")
-        raw_date = raw_json.get("release_date", "")
+        title = raw.get("title", "")
+        date_str = raw.get("release_date", "")
     else:
-        title    = raw_json.get("name", "")
-        raw_date = raw_json.get("first_air_date", "")
+        title = raw.get("name", "")
+        date_str = raw.get("first_air_date", "")
 
-    # Safe year extraction (no string slicing on arbitrary length strings)
-    release_year = None
-    if raw_date and len(raw_date) >= 4 and raw_date[:4].isdigit():
-        release_year = int(raw_date[:4])
+    # Extract year from date string like "2019-07-26"
+    try:
+        release_year = int(date_str[:4]) if date_str else None
+    except (ValueError, TypeError):
+        release_year = None
 
-    # Genre names — canonical names only available from details endpoint
-    genre_names = [
-        g["name"].strip()
-        for g in raw_json.get("genres", [])
-        if isinstance(g, dict) and "name" in g
-    ]
+    # API returns genre_ids in search results (not genre names)
+    # We leave genres as empty string here; fetch_title gets the real names
+    genre_ids = raw.get("genre_ids", [])
 
     return {
-        "media_type":        media_type,
-        "tmdb_id":           int(raw_json["id"]),
-        "title":             title,
-        "release_year":      release_year,
-        "rating":            round(float(raw_json.get("vote_average", 0.0)), 4),
-        "vote_count":        int(raw_json.get("vote_count", 0)),
-        "genres":            "|".join(sorted(set(genre_names))),
-        "original_language": raw_json.get("original_language", ""),
-        "fetched_at":        datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "media_type": media_type,
+        "tmdb_id": raw.get("id"),
+        "title": title,
+        "release_year": release_year,
+        "rating": raw.get("vote_average"),
+        "vote_count": raw.get("vote_count"),
+        "genres": "",  # Populated properly in fetch_title()
+        "original_language": raw.get("original_language", ""),
     }
 
-
-def _validate_media_type(media_type: str) -> None:
-    if media_type not in VALID_MEDIA_TYPES:
-        raise ValueError(
-            f"Invalid media_type '{media_type}'. Must be one of: {VALID_MEDIA_TYPES}"
-        )
-
-
-# ---------------------------------------------------------------------------
-# Public API
-# ---------------------------------------------------------------------------
-
-def search_titles(query: str, media_type: str, page: int = 1) -> dict:
+def normalize_detail(raw, media_type):
     """
-    Search TMDb for titles matching the query string.
-
-    Args:
-        query:       Search string. If empty/whitespace, returns empty result
-                     without a network call.
-        media_type:  'movie' or 'tv'.
-        page:        Pagination page number (default 1).
-
-    Returns:
-        {
-            "page":        int,
-            "total_pages": int,
-            "results":     list[dict]   # raw TMDb result items
-        }
-
-    Raises:
-        ValueError:      If media_type is invalid.
-        RuntimeError:    If TMDB_TOKEN is not set.
-        requests.HTTPError: On non-2xx responses (token redacted from message).
+    Converts a TMDb detail response into our clean dictionary format.
+    fetch_title() returns full genre names (not just IDs), so we parse them here.
     """
-    _validate_media_type(media_type)
+    if media_type == "movie":
+        title = raw.get("title", "")
+        date_str = raw.get("release_date", "")
+    else:
+        title = raw.get("name", "")
+        date_str = raw.get("first_air_date", "")
 
-    # Short-circuit for empty/blank queries — no network call
+    try:
+        release_year = int(date_str[:4]) if date_str else None
+    except (ValueError, TypeError):
+        release_year = None
+
+    # Detail endpoint gives full genre objects like: [{"id": 28, "name": "Action"}]
+    raw_genres = raw.get("genres", [])
+    genre_names = sorted(set(
+        g["name"].strip() for g in raw_genres if g.get("name", "").strip()
+    ))
+    genres_str = "|".join(genre_names)
+
+    return {
+        "media_type": media_type,
+        "tmdb_id": raw.get("id"),
+        "title": title,
+        "release_year": release_year,
+        "rating": raw.get("vote_average"),
+        "vote_count": raw.get("vote_count"),
+        "genres": genres_str,
+        "original_language": raw.get("original_language", ""),
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+def search_titles(query, media_type, page=1):
+    """
+    Searches TMDb for titles matching the query.
+    Returns: {"page": int, "total_pages": int, "results": [list of dicts]}
+    """
+    # Blank queries return empty result without making a request
     if not query or not query.strip():
         return {"page": 1, "total_pages": 0, "results": []}
 
-    url    = f"{TMDB_BASE}/search/{media_type}"
+    token = get_token()
+    url = f"{BASE_URL}/search/{media_type}"
+    headers = {"Authorization": f"Bearer {token}"}
     params = {
-        "query":         query.strip(),
-        "page":          page,
-        "include_adult": "false",
+        "query": query.strip(),
+        "language": "en-US",
+        "page": page,
     }
 
     try:
-        resp = requests.get(url, headers=_headers(), params=params, timeout=TIMEOUT)
-        resp.raise_for_status()
-    except requests.HTTPError as exc:
-        raise requests.HTTPError(sanitize_error(str(exc))) from exc
-    except requests.RequestException as exc:
-        raise requests.RequestException(
-            f"Network error during search_titles: {sanitize_error(str(exc))}"
-        ) from exc
+        response = requests.get(url, headers=headers, params=params, timeout=10)
+        response.raise_for_status()
+    except requests.exceptions.RequestException:
+        raise Exception("TMDb search request failed. Check your connection or token.")
 
-    data = resp.json()
+    data = response.json()
+    results = [normalize_result(r, media_type) for r in data.get("results", [])]
+
     return {
-        "page":        data.get("page", page),
+        "page": data.get("page", 1),
         "total_pages": data.get("total_pages", 0),
-        "results":     data.get("results", []),
+        "results": results,
     }
 
-
-def fetch_title(tmdb_id: int, media_type: str) -> dict:
+def fetch_title(tmdb_id, media_type):
     """
-    Fetch full details for a specific TMDb title and normalize to contract schema.
-
-    Uses the details endpoint (/{media_type}/{id}) which returns canonical genre
-    names (not just numeric IDs).
-
-    Args:
-        tmdb_id:     Positive integer TMDb ID.
-        media_type:  'movie' or 'tv'.
-
-    Returns:
-        Normalized dict matching Curatr contract columns plus 'fetched_at'.
-        Keys: media_type, tmdb_id, title, release_year, rating, vote_count,
-              genres, original_language, fetched_at.
-
-    Raises:
-        ValueError:      If media_type is invalid or tmdb_id <= 0.
-        RuntimeError:    If TMDB_TOKEN is not set.
-        requests.HTTPError: On non-2xx responses (token redacted).
+    Fetches full details for one title from TMDb.
+    Returns a normalized dictionary ready for score_title().
     """
-    _validate_media_type(media_type)
-
-    if not isinstance(tmdb_id, int) or tmdb_id <= 0:
-        raise ValueError(f"tmdb_id must be a positive integer, got: {tmdb_id!r}")
-
-    url = f"{TMDB_BASE}/{media_type}/{tmdb_id}"
+    token = get_token()
+    url = f"{BASE_URL}/{media_type}/{tmdb_id}"
+    headers = {"Authorization": f"Bearer {token}"}
+    params = {"language": "en-US"}
 
     try:
-        resp = requests.get(url, headers=_headers(), timeout=TIMEOUT)
-        resp.raise_for_status()
-    except requests.HTTPError as exc:
-        raise requests.HTTPError(sanitize_error(str(exc))) from exc
-    except requests.RequestException as exc:
-        raise requests.RequestException(
-            f"Network error during fetch_title: {sanitize_error(str(exc))}"
-        ) from exc
+        response = requests.get(url, headers=headers, params=params, timeout=10)
+        response.raise_for_status()
+    except requests.exceptions.RequestException:
+        raise Exception(f"TMDb fetch failed for {media_type} ID {tmdb_id}.")
 
-    return _normalize_details(resp.json(), media_type)
+    return normalize_detail(response.json(), media_type)
+
+if __name__ == "__main__":
+    print("Testing TMDb client...")
+    try:
+        # Test search
+        results = search_titles("Inception", "movie")
+        print(f"Search returned {len(results['results'])} results")
+        print(f"First result: {results['results'][0]['title']} ({results['results'][0]['release_year']})")
+
+        # Test fetch details
+        first_id = results["results"][0]["tmdb_id"]
+        detail = fetch_title(first_id, "movie")
+        print(f"\nFull details for: {detail['title']}")
+        print(f"  Rating:    {detail['rating']}")
+        print(f"  Genres:    {detail['genres']}")
+        print(f"  Votes:     {detail['vote_count']}")
+        print(f"  Fetched:   {detail['fetched_at']}")
+    except Exception as e:
+        print(f"Error: {e}")
