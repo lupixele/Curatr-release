@@ -4,6 +4,15 @@ from datetime import datetime, timezone
 
 BASE_URL = "https://api.themoviedb.org/3"
 
+GENRE_MAP = {
+    28: "Action", 12: "Adventure", 16: "Animation", 35: "Comedy", 80: "Crime",
+    99: "Documentary", 18: "Drama", 10751: "Family", 14: "Fantasy", 36: "History",
+    27: "Horror", 10402: "Music", 9648: "Mystery", 10749: "Romance", 878: "Science Fiction",
+    10770: "TV Movie", 53: "Thriller", 10752: "War", 37: "Western",
+    10759: "Action & Adventure", 10762: "Kids", 10763: "News", 10764: "Reality",
+    10765: "Sci-Fi & Fantasy", 10766: "Soap", 10767: "Talk", 10768: "War & Politics",
+}
+
 def get_token():
     """Reads TMDb token from environment. Never hardcode it!"""
     token = os.environ.get("TMDB_TOKEN")
@@ -30,9 +39,10 @@ def normalize_result(raw, media_type):
     except (ValueError, TypeError):
         release_year = None
 
-    # API returns genre_ids in search results (not genre names)
-    # We leave genres as empty string here; fetch_title gets the real names
+    # API returns genre_ids in search results; map them to canonical names
     genre_ids = raw.get("genre_ids", [])
+    genre_names = sorted(set(GENRE_MAP[gid] for gid in genre_ids if gid in GENRE_MAP))
+    genres = "|".join(genre_names)
 
     return {
         "media_type": media_type,
@@ -41,7 +51,7 @@ def normalize_result(raw, media_type):
         "release_year": release_year,
         "rating": raw.get("vote_average"),
         "vote_count": raw.get("vote_count"),
-        "genres": "",  # Populated properly in fetch_title()
+        "genres": genres,
         "original_language": raw.get("original_language", ""),
         "poster_path": raw.get("poster_path"),
     }
