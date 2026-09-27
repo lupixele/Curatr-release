@@ -43,6 +43,7 @@ def normalize_result(raw, media_type):
         "vote_count": raw.get("vote_count"),
         "genres": "",  # Populated properly in fetch_title()
         "original_language": raw.get("original_language", ""),
+        "poster_path": raw.get("poster_path"),
     }
 
 def normalize_detail(raw, media_type):
@@ -79,6 +80,7 @@ def normalize_detail(raw, media_type):
         "genres": genres_str,
         "original_language": raw.get("original_language", ""),
         "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "poster_path": raw.get("poster_path"),
     }
 
 def search_titles(query, media_type, page=1):

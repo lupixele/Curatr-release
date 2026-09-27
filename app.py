@@ -93,12 +93,29 @@ with tab3:
         if not results:
             st.info("No results found.")
         else:
-            bl = baselines.get(search_type, {})
             for r in results[:10]:
-                scored = score_title(r, bl)
-                with st.expander(f"{r.get('title') or r.get('name', '—')}  ({r.get('release_year', '?')})"):
-                    col1, col2, col3 = st.columns(3)
-                    col1.metric("TMDb Rating", f"{r.get('rating', 0):.1f}")
-                    col2.metric("Global Score", f"{scored.get('global_score', 0):.2f}")
-                    col3.metric("Genre Score",  f"{scored.get('genre_score', 0):.2f}")
-                    st.caption(f"Votes: {r.get('vote_count', 0):,}  ·  Genres: {r.get('genres', '—')}")
+                scored = score_title(r, baselines)
+                title_name = r.get("title") or r.get("name", "—")
+                year_val = r.get("release_year") or "—"
+                with st.expander(f"{title_name} ({year_val})"):
+                    img_col, info_col = st.columns([1, 4])
+                    with img_col:
+                        poster = r.get("poster_path")
+                        if poster:
+                            st.image(f"https://image.tmdb.org/t/p/w185{poster}", use_container_width=True)
+                        else:
+                            st.caption("🎬 *No image*")
+                    with info_col:
+                        col1, col2, col3 = st.columns(3)
+                        rating_val = r.get("rating")
+                        col1.metric("TMDb Rating", f"{rating_val:.1f}" if rating_val is not None else "N/A")
+
+                        g_score = scored.get("global_score")
+                        col2.metric("Global Score", f"{g_score:.2f}" if g_score is not None else "N/A")
+
+                        gn_score = scored.get("genre_score")
+                        col3.metric("Genre Score", f"{gn_score:.2f}" if gn_score is not None else "N/A")
+
+                        votes = r.get("vote_count", 0) or 0
+                        genres = scored.get("genres") or r.get("genres") or "—"
+                        st.caption(f"Votes: {votes:,}  ·  Genres: {genres}")
