@@ -1,28 +1,29 @@
-# Data files (large CSVs)
-data/raw/
-data/clean_titles.csv
-data/baselines.json
-data/scored_titles.csv
-data/genre_year.csv
+# Jupyter
+.ipynb_checkpoints/
 
-# Environment / secrets
-.env
-*.env
-
-# Python
+# Python cache
 __pycache__/
-*.pyc
-*.pyo
+
+# Raw datasets (too large for git)
+data/raw/
+
+# Practice files
+practice/lupixele/
+practice/solo/
+
+# Test cache
+tests/__pycache__/
+
+# __pycache__/
+.ipynb_checkpoints/
 .venv/
-venv/
-*.egg-info/
+.ipynb_checkpoints/scoring-checkpoint.py
+practice/ratan/.ipynb_checkpoints/hello-checkpoint.py
+practice/ratan/hello.py
 
-# IDE
+# vs code
 .vscode/
-.idea/
-*.swp
-*.swo
 
-# OS
-.DS_Store
-Thumbs.db
+#checkpoint
+.ipynb_checkpoints/scoring-checkpoint.py
+practice/ratan/.ipynb_checkpoints/
