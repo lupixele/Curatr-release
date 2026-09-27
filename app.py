@@ -64,15 +64,14 @@ with tab1:
 # Tab 2: Trends
 with tab2:
     st.subheader(f"Genre trend · {selected_genre} · {media_type}")
-    genre_data = trend_df[
+    has_data = not trend_df[
         (trend_df["media_type"] == media_type) &
         (trend_df["genre"] == selected_genre)
-    ].sort_values("release_year")
-
-    if genre_data.empty:
+    ].empty
+    if not has_data:
         st.info("No trend data for this genre/media type.")
     else:
-        fig = plot_genre_trend(genre_data, selected_genre, media_type)
+        fig = plot_genre_trend(trend_df, media_type, selected_genre)
         st.pyplot(fig)
         plt.close(fig)
 
