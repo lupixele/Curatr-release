@@ -84,7 +84,8 @@ with tab3:
     if query.strip():
         with st.spinner("Searching TMDb..."):
             try:
-                results = search_titles(query.strip(), media_type=search_type)
+                response = search_titles(query.strip(), media_type=search_type)
+                results = response.get("results", [])
             except Exception as e:
                 st.error(f"Search failed: {e}")
                 results = []
