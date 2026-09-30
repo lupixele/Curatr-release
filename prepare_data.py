@@ -1,8 +1,8 @@
 import pandas as pd
 
 # 1. Load the original raw files
-mv_df = pd.read_csv(r"P:\Magnanimity\Projects\rei-nexus\curatr\Curatr-release\data\raw\TMDB_MV.csv")
-tv_df = pd.read_csv(r"P:\Magnanimity\Projects\rei-nexus\curatr\Curatr-release\data\raw\TMDB_TV.csv")
+mv_df = pd.read_csv(r"data\raw\TMDB_MV.csv")
+tv_df = pd.read_csv(r"data\raw\TMDB_TV.csv")
 
 
 def clean_genres(text):
@@ -135,6 +135,6 @@ clean_df = clean_df[
 
 # Save
 clean_df.to_csv(
-    r"P:\Magnanimity\Projects\rei-nexus\curatr\Curatr-release\data\raw\clean_titles.csv",
+    r"data\raw\clean_titles.csv",
     index=False
 )

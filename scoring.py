@@ -160,11 +160,11 @@ if __name__ == "__main__":
     print("Saved data/scored_titles.csv!")
     print(scored_df["score_status"].value_counts())
 
-    #df = pd.read_csv(r"P:\Silas\Projects\rei-nexus\curatr\Curatr-release\data\clean_titles.csv")
+    #df = pd.read_csv(r"data\clean_titles.csv")
     #print("Building baselines...")
     #baselines = build_baselines(df)
 
-    #out_path = r"P:\Silas\Projects\rei-nexus\curatr\Curatr-release\data\baselines.json"
+    #out_path = r"data\baselines.json"
     #with open(out_path, "w", encoding="utf-8") as f:
         #json.dump(baselines, f, indent=2)
 

@@ -35,6 +35,14 @@ with st.sidebar:
     st.header("Control Panel")
     media_type    = st.radio("Media Type", ["movie", "tv"], horizontal=True)
     overview_year = st.selectbox("Overview Year", list(range(2014, 2024)), index=9)
+    min_votes     = st.slider(
+        "Minimum Votes",
+        min_value=1,
+        max_value=1000,
+        value=50,
+        step=10,
+        help="Filter out titles with few votes to ensure representative rankings.",
+    )
     genre_list    = sorted(trend_df[trend_df["media_type"] == media_type]["genre"].unique())
     selected_genre = st.selectbox("Genre (Trends tab)", genre_list)
 
@@ -43,10 +51,12 @@ tab1, tab2, tab3 = st.tabs(["Overview", "Trends", "Search"])
 # Tab 1: Overview
 with tab1:
     st.subheader(f"Top titles · {media_type} · {overview_year}")
+    st.caption(f"Showing top 50 titles with at least {min_votes:,} votes, sorted by Bayesian global score.")
     filtered = (
         scored_df[
             (scored_df["media_type"] == media_type) &
-            (scored_df["release_year"] == overview_year)
+            (scored_df["release_year"] == overview_year) &
+            (scored_df["vote_count"] >= min_votes)
         ]
         .sort_values("global_score", ascending=False)
         .head(50)
