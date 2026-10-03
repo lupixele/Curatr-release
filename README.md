@@ -49,3 +49,22 @@ TMDB_TOKEN=your_tmdb_bearer_token_here
 | Nagendra | Trends & Testing | `trends.py`, `tests/test_trends.py` |
 
 Development docs, guides, and research: [Curatr-dev](https://github.com/lupixele/Curatr-dev)
+
+## Rating threshold and charts
+
+The shrinkage threshold `m` is the 75th percentile of vote counts for each
+media type: 9 for movies and 10 for TV in the stored 2014–2023 snapshot.
+The former 25th-percentile rule gave `m = 1` because many titles have one vote.
+The new rule reduces their influence without changing either score formula.
+It is a conservative robustness choice, not an empirically optimized threshold.
+The minimum-votes ranking filter controls eligibility separately.
+
+Run `scoring.py` and then `trends.py` together after changing the threshold:
+the app uses `baselines.json` for live search, `scored_titles.csv` for rankings,
+and `genre_year.csv` for trends. All three must describe the same scoring policy.
+
+In Overview, enable **Show dataset charts** to choose a genre count bar chart,
+media share pie chart, rating/score histogram, genre rating box plot,
+vote/rating scatter plot, or genre-year heatmap. These summarize the full
+reference snapshot independently of the ranking year/minimum-votes filters.
+The existing single-genre line chart remains in Trends.

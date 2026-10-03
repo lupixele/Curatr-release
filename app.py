@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from scoring import score_title
 from trends import plot_genre_trend
 from tmdb_client import search_titles, fetch_title
+from report_charts import CHART_NAMES, build_report_chart
 
 # Page config
 st.set_page_config(page_title="Curatr", layout="wide")
@@ -17,7 +18,8 @@ st.caption("Movie & TV Rating Analysis · DAE Capstone · Team rei-nexus")
 
 # Load Data
 @st.cache_data
-def load_data():
+def load_data(data_version):
+    # File timestamps form the cache key when a new scoring snapshot is shipped.
     scored_df = pd.read_csv("data/scored_titles.csv")
     trend_df  = pd.read_csv("data/genre_year.csv")
     with open("data/baselines.json", "r", encoding="utf-8") as f:
@@ -25,7 +27,9 @@ def load_data():
     return scored_df, trend_df, baselines
 
 try:
-    scored_df, trend_df, baselines = load_data()
+    data_version = tuple(os.path.getmtime(f"data/{name}") for name in
+                         ("scored_titles.csv", "genre_year.csv", "baselines.json"))
+    scored_df, trend_df, baselines = load_data(data_version)
 except FileNotFoundError as e:
     st.error(f"Missing data file: {e}. Run prepare_data.py → scoring.py → trends.py first.")
     st.stop()
@@ -70,6 +74,26 @@ with tab1:
             use_container_width=True,
             hide_index=True,
         )
+
+    if st.checkbox("Show dataset charts", key="show_dataset_charts"):
+        st.caption(
+            "Full 2014–2023 reference snapshot; independent of ranking year and minimum votes. "
+            "Genre memberships overlap. The heatmap follows the sidebar media type and leaves "
+            "cohorts with fewer than five titles blank."
+        )
+        chart_name = st.selectbox("Dataset chart", CHART_NAMES, key="dataset_chart")
+        if chart_name == "Votes and ratings":
+            st.caption("A reproducible sample of up to 3,000 titles; color shows the global score.")
+        elif chart_name == "Ratings by genre":
+            st.caption("The eight most common genres; outlier points are hidden for readability.")
+        fig = build_report_chart(chart_name, scored_df, trend_df, baselines, media_type)
+        if fig is None:
+            st.info("No eligible data for this chart.")
+        else:
+            try:
+                st.pyplot(fig)
+            finally:
+                plt.close(fig)
 
 # Tab 2: Trends
 with tab2:
