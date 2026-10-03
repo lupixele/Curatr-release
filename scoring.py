@@ -1,10 +1,13 @@
 import pandas as pd
 import os
 import json
+from pathlib import Path
 
 def compute_media_baselines(sub_df):
     c = sub_df["rating"].mean()
-    m = sub_df["vote_count"].quantile(0.25)
+    # Upper quartile limits the influence of the many one-vote titles.
+    # This is a documented robustness policy, not an optimized parameter.
+    m = sub_df["vote_count"].quantile(0.75)
 
     exploded = sub_df.assign(
         genre = sub_df["genres"].str.split("|")
@@ -55,6 +58,7 @@ def build_baselines(clean_df):
     return {
         "schema_version": 1,
         "reference_years": [2014, 2023],
+        "vote_threshold_quantile": 0.75,
         "source_note" : "asaniczka full TMDb movies/tv datasets",
         "movie": compute_media_baselines(mv_df),
         "tv": compute_media_baselines(tv_df),
@@ -151,25 +155,13 @@ def score_dataframe(clean_df,baselines):
 
 
 if __name__ == "__main__":
-    with open(r"data\baselines.json") as f:
-        baselines = json.load(f)
-    clean_df = pd.read_csv(r"data\clean_titles.csv")
+    data_dir = Path(__file__).resolve().parent / "data"
+    clean_df = pd.read_csv(data_dir / "clean_titles.csv")
+    baselines = build_baselines(clean_df)
+    with open(data_dir / "baselines.json", "w", encoding="utf-8") as f:
+        json.dump(baselines, f, indent=2)
     print("Scoring titles...")
     scored_df = score_dataframe(clean_df, baselines)
-    scored_df.to_csv(r"data\scored_titles.csv", index=False)
+    scored_df.to_csv(data_dir / "scored_titles.csv", index=False)
     print("Saved data/scored_titles.csv!")
     print(scored_df["score_status"].value_counts())
-
-    #df = pd.read_csv(r"data\clean_titles.csv")
-    #print("Building baselines...")
-    #baselines = build_baselines(df)
-
-    #out_path = r"data\baselines.json"
-    #with open(out_path, "w", encoding="utf-8") as f:
-        #json.dump(baselines, f, indent=2)
-
-    #print(f"Saved baselines to {out_path}")
-    #print(f"Movie C: {baselines['movie']['C']}, m: {baselines['movie']['m']}")
-    #print(f"TV C:    {baselines['tv']['C']}, m: {baselines['tv']['m']}")
-    #print(f"Movie genres found: {len(baselines['movie']['genres'])}")
-    #print(f"TV genres found:    {len(baselines['tv']['genres'])}")

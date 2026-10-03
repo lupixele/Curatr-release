@@ -4,10 +4,11 @@
     2014,
     2023
   ],
+  "vote_threshold_quantile": 0.75,
   "source_note": "asaniczka full TMDb movies/tv datasets",
   "movie": {
     "C": 6.3804,
-    "m": 1.0,
+    "m": 9.0,
     "title_count": 101023,
     "genres": {
       "Action": {
@@ -128,7 +129,7 @@
   },
   "tv": {
     "C": 6.9219,
-    "m": 1.0,
+    "m": 10.0,
     "title_count": 26172,
     "genres": {
       "Action & Adventure": {

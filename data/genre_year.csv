@@ -1,266 +1,266 @@
 media_type,genre,release_year,title_count,mean_genre_score,mean_raw_rating,yoy_change,comparison_status
-movie,Action,2014,679,6.0006,5.8727,,no_previous_year
-movie,Action,2015,746,6.0641,5.9396,0.0635,rise
-movie,Action,2016,838,6.181,6.1295,0.1169,rise
-movie,Action,2017,912,6.3067,6.2597,0.1257,rise
-movie,Action,2018,864,6.2851,6.2495,-0.0216,fall
-movie,Action,2019,839,6.3964,6.3607,0.1113,rise
-movie,Action,2020,656,6.4026,6.4029,0.0062,rise
-movie,Action,2021,778,6.5334,6.5517,0.1308,rise
-movie,Action,2022,892,6.557,6.6529,0.0236,rise
-movie,Action,2023,770,6.6222,6.7674,0.0652,rise
-movie,Adventure,2014,425,6.1556,6.2571,,no_previous_year
-movie,Adventure,2015,404,6.2357,6.3573,0.0801,rise
-movie,Adventure,2016,431,6.1959,6.272,-0.0398,fall
-movie,Adventure,2017,433,6.3297,6.4848,0.1338,rise
-movie,Adventure,2018,434,6.3639,6.503,0.0342,rise
-movie,Adventure,2019,423,6.463,6.6278,0.0991,rise
-movie,Adventure,2020,328,6.492,6.7332,0.029,rise
-movie,Adventure,2021,364,6.6258,6.8663,0.1338,rise
-movie,Adventure,2022,419,6.5244,6.7437,-0.1014,fall
-movie,Adventure,2023,312,6.84,7.2684,0.3156,rise
-movie,Animation,2014,632,6.2828,6.492,,no_previous_year
-movie,Animation,2015,645,6.3811,6.624,0.0983,rise
-movie,Animation,2016,621,6.376,6.6364,-0.0051,fall
-movie,Animation,2017,652,6.4841,6.7926,0.1081,rise
-movie,Animation,2018,621,6.4935,6.8105,0.0094,rise
-movie,Animation,2019,700,6.5475,6.8351,0.054,rise
-movie,Animation,2020,672,6.5382,6.866,-0.0093,fall
-movie,Animation,2021,683,6.5844,6.944,0.0462,rise
-movie,Animation,2022,541,6.6327,6.9763,0.0483,rise
-movie,Animation,2023,366,6.7514,7.2492,0.1187,rise
-movie,Comedy,2014,2237,6.046,5.8441,,no_previous_year
-movie,Comedy,2015,2332,6.1074,5.9186,0.0614,rise
-movie,Comedy,2016,2409,6.1254,5.942,0.018,rise
-movie,Comedy,2017,2481,6.2357,6.0974,0.1103,rise
-movie,Comedy,2018,2511,6.2708,6.145,0.0351,rise
-movie,Comedy,2019,2525,6.3314,6.2197,0.0606,rise
-movie,Comedy,2020,2086,6.3879,6.3169,0.0565,rise
-movie,Comedy,2021,2194,6.4349,6.3807,0.047,rise
-movie,Comedy,2022,2721,6.481,6.4714,0.0461,rise
-movie,Comedy,2023,1856,6.7351,6.9286,0.2541,rise
-movie,Crime,2014,417,6.0927,5.9293,,no_previous_year
-movie,Crime,2015,519,6.1673,5.9705,0.0746,rise
-movie,Crime,2016,509,6.1141,5.9033,-0.0532,fall
-movie,Crime,2017,591,6.2693,6.1267,0.1552,rise
-movie,Crime,2018,581,6.3639,6.2957,0.0946,rise
-movie,Crime,2019,624,6.3679,6.2723,0.004,rise
-movie,Crime,2020,450,6.3507,6.2496,-0.0172,fall
-movie,Crime,2021,601,6.4737,6.4131,0.123,rise
-movie,Crime,2022,636,6.5411,6.5701,0.0674,rise
-movie,Crime,2023,499,6.6614,6.7604,0.1203,rise
-movie,Documentary,2014,2005,6.2315,6.7089,,no_previous_year
-movie,Documentary,2015,2212,6.3717,6.94,0.1402,rise
-movie,Documentary,2016,2147,6.3039,6.8271,-0.0678,fall
-movie,Documentary,2017,2506,6.345,6.8737,0.0411,rise
-movie,Documentary,2018,2468,6.3836,6.9491,0.0386,rise
-movie,Documentary,2019,2711,6.4075,6.9722,0.0239,rise
-movie,Documentary,2020,2618,6.4077,6.9652,0.0002,rise
-movie,Documentary,2021,2503,6.4438,7.0125,0.0361,rise
-movie,Documentary,2022,2443,6.4006,6.9436,-0.0432,fall
-movie,Documentary,2023,1603,6.4101,6.9511,0.0095,rise
-movie,Drama,2014,3230,6.1302,5.9328,,no_previous_year
-movie,Drama,2015,3534,6.1479,5.9656,0.0177,rise
-movie,Drama,2016,3587,6.2243,6.0611,0.0764,rise
-movie,Drama,2017,3953,6.3001,6.1849,0.0758,rise
-movie,Drama,2018,4074,6.3131,6.1948,0.013,rise
-movie,Drama,2019,4189,6.3791,6.2816,0.066,rise
-movie,Drama,2020,3407,6.3991,6.3099,0.02,rise
-movie,Drama,2021,3570,6.5061,6.4811,0.107,rise
-movie,Drama,2022,3875,6.5236,6.5292,0.0175,rise
-movie,Drama,2023,2615,6.6891,6.8423,0.1655,rise
-movie,Family,2014,536,6.1912,6.254,,no_previous_year
-movie,Family,2015,503,6.2115,6.2722,0.0203,rise
-movie,Family,2016,498,6.2088,6.2083,-0.0027,fall
-movie,Family,2017,531,6.3856,6.5013,0.1768,rise
-movie,Family,2018,516,6.423,6.5662,0.0374,rise
-movie,Family,2019,520,6.5981,6.7838,0.1751,rise
-movie,Family,2020,424,6.4996,6.664,-0.0985,fall
-movie,Family,2021,460,6.4457,6.5461,-0.0539,fall
-movie,Family,2022,489,6.4113,6.4922,-0.0344,fall
-movie,Family,2023,322,6.6336,6.9247,0.2223,rise
-movie,Fantasy,2014,349,6.1556,6.1137,,no_previous_year
-movie,Fantasy,2015,394,6.0613,5.9411,-0.0943,fall
-movie,Fantasy,2016,357,6.1752,6.1412,0.1139,rise
-movie,Fantasy,2017,430,6.3688,6.4479,0.1936,rise
-movie,Fantasy,2018,456,6.2724,6.2999,-0.0964,fall
-movie,Fantasy,2019,455,6.4786,6.5895,0.2062,rise
-movie,Fantasy,2020,501,6.4251,6.5153,-0.0535,fall
-movie,Fantasy,2021,466,6.6594,6.8598,0.2343,rise
-movie,Fantasy,2022,502,6.6302,6.8657,-0.0292,fall
-movie,Fantasy,2023,328,6.7371,7.1033,0.1069,rise
-movie,History,2014,274,6.2361,6.4893,,no_previous_year
-movie,History,2015,291,6.4024,6.7931,0.1663,rise
-movie,History,2016,278,6.4639,6.8181,0.0615,rise
-movie,History,2017,309,6.4446,6.7998,-0.0193,fall
-movie,History,2018,342,6.4029,6.7509,-0.0417,fall
-movie,History,2019,404,6.5531,6.9787,0.1502,rise
-movie,History,2020,307,6.5615,7.049,0.0084,rise
-movie,History,2021,357,6.5175,6.9782,-0.044,fall
-movie,History,2022,329,6.5909,7.0577,0.0734,rise
-movie,History,2023,216,6.6928,7.2172,0.1019,rise
-movie,Horror,2014,929,5.6832,5.0299,,no_previous_year
-movie,Horror,2015,973,5.7444,5.17,0.0612,rise
-movie,Horror,2016,998,5.7766,5.1634,0.0322,rise
-movie,Horror,2017,1146,6.0192,5.5127,0.2426,rise
-movie,Horror,2018,1157,6.1187,5.6452,0.0995,rise
-movie,Horror,2019,1233,6.1984,5.7669,0.0797,rise
-movie,Horror,2020,1233,6.358,5.9898,0.1596,rise
-movie,Horror,2021,1115,6.3792,6.028,0.0212,rise
-movie,Horror,2022,1256,6.4806,6.2201,0.1014,rise
-movie,Horror,2023,826,6.7678,6.6992,0.2872,rise
-movie,Music,2014,633,6.3193,7.2493,,no_previous_year
-movie,Music,2015,615,6.5444,7.5718,0.2251,rise
-movie,Music,2016,600,6.4325,7.3723,-0.1119,fall
-movie,Music,2017,649,6.551,7.5548,0.1185,rise
-movie,Music,2018,558,6.5667,7.5762,0.0157,rise
-movie,Music,2019,650,6.5088,7.5046,-0.0579,fall
-movie,Music,2020,605,6.6157,7.6589,0.1069,rise
-movie,Music,2021,634,6.4991,7.4472,-0.1166,fall
-movie,Music,2022,613,6.5498,7.5332,0.0507,rise
-movie,Music,2023,506,6.6826,7.8637,0.1328,rise
-movie,Mystery,2014,347,6.0032,5.7834,,no_previous_year
-movie,Mystery,2015,412,6.1537,5.9993,0.1505,rise
-movie,Mystery,2016,423,6.0487,5.8219,-0.105,fall
-movie,Mystery,2017,431,6.1822,6.0,0.1335,rise
-movie,Mystery,2018,456,6.276,6.174,0.0938,rise
-movie,Mystery,2019,434,6.4403,6.4017,0.1643,rise
-movie,Mystery,2020,376,6.4368,6.4604,-0.0035,fall
-movie,Mystery,2021,460,6.7409,6.9329,0.3041,rise
-movie,Mystery,2022,576,6.652,6.7948,-0.0889,fall
-movie,Mystery,2023,434,6.8067,7.0667,0.1547,rise
-movie,Romance,2014,886,6.0458,5.761,,no_previous_year
-movie,Romance,2015,978,6.0852,5.8336,0.0394,rise
-movie,Romance,2016,1086,6.1189,5.8475,0.0337,rise
-movie,Romance,2017,1009,6.2363,6.0168,0.1174,rise
-movie,Romance,2018,1031,6.2532,6.0247,0.0169,rise
-movie,Romance,2019,1046,6.3506,6.1461,0.0974,rise
-movie,Romance,2020,953,6.417,6.2216,0.0664,rise
-movie,Romance,2021,986,6.5048,6.4395,0.0878,rise
-movie,Romance,2022,1098,6.5242,6.4629,0.0194,rise
-movie,Romance,2023,742,6.6478,6.689,0.1236,rise
-movie,Science Fiction,2014,434,5.9434,5.7329,,no_previous_year
-movie,Science Fiction,2015,472,6.0464,5.8459,0.103,rise
-movie,Science Fiction,2016,475,6.0318,5.841,-0.0146,fall
-movie,Science Fiction,2017,513,6.1093,5.9331,0.0775,rise
-movie,Science Fiction,2018,466,6.1345,5.9821,0.0252,rise
-movie,Science Fiction,2019,485,6.2398,6.0647,0.1053,rise
-movie,Science Fiction,2020,452,6.3406,6.2545,0.1008,rise
-movie,Science Fiction,2021,538,6.4543,6.4303,0.1137,rise
-movie,Science Fiction,2022,481,6.5468,6.5825,0.0925,rise
-movie,Science Fiction,2023,363,6.7261,6.9414,0.1793,rise
-movie,TV Movie,2014,371,6.1381,6.1183,,no_previous_year
-movie,TV Movie,2015,419,6.1911,6.1445,0.053,rise
-movie,TV Movie,2016,444,6.1889,6.1161,-0.0022,fall
-movie,TV Movie,2017,496,6.2565,6.2061,0.0676,rise
-movie,TV Movie,2018,493,6.3899,6.4111,0.1334,rise
-movie,TV Movie,2019,598,6.4413,6.4322,0.0514,rise
-movie,TV Movie,2020,471,6.5143,6.5467,0.073,rise
-movie,TV Movie,2021,696,6.4735,6.4867,-0.0408,fall
-movie,TV Movie,2022,678,6.4206,6.3962,-0.0529,fall
-movie,TV Movie,2023,382,6.4268,6.4565,0.0062,rise
-movie,Thriller,2014,935,5.8553,5.4371,,no_previous_year
-movie,Thriller,2015,1051,5.941,5.5712,0.0857,rise
-movie,Thriller,2016,1151,5.921,5.5207,-0.02,fall
-movie,Thriller,2017,1212,6.083,5.7342,0.162,rise
-movie,Thriller,2018,1216,6.2227,5.9603,0.1397,rise
-movie,Thriller,2019,1255,6.2524,5.9879,0.0297,rise
-movie,Thriller,2020,1082,6.2616,5.9791,0.0092,rise
-movie,Thriller,2021,1280,6.4573,6.2813,0.1957,rise
-movie,Thriller,2022,1481,6.5028,6.3734,0.0455,rise
-movie,Thriller,2023,1107,6.6585,6.6397,0.1557,rise
-movie,War,2014,121,6.2403,6.4903,,no_previous_year
-movie,War,2015,118,6.2918,6.5044,0.0515,rise
-movie,War,2016,137,6.4633,6.7232,0.1715,rise
-movie,War,2017,141,6.3463,6.5485,-0.117,fall
-movie,War,2018,141,6.3602,6.6188,0.0139,rise
-movie,War,2019,159,6.5467,6.8985,0.1865,rise
-movie,War,2020,116,6.6301,7.0907,0.0834,rise
-movie,War,2021,123,6.6154,7.0828,-0.0147,fall
-movie,War,2022,117,6.503,6.8759,-0.1124,fall
-movie,War,2023,91,6.7393,7.2161,0.2363,rise
-movie,Western,2014,33,6.0287,5.8518,,no_previous_year
-movie,Western,2015,33,5.9042,5.5411,-0.1245,fall
-movie,Western,2016,40,5.9162,5.7582,0.012,rise
-movie,Western,2017,51,6.4084,6.5841,0.4922,rise
-movie,Western,2018,50,5.7498,5.4423,-0.6586,fall
-movie,Western,2019,46,5.9919,5.7591,0.2421,rise
-movie,Western,2020,40,6.7687,6.992,0.7768,rise
-movie,Western,2021,53,6.4943,6.5133,-0.2744,fall
-movie,Western,2022,51,6.3557,6.3213,-0.1386,fall
-movie,Western,2023,50,6.7209,7.0221,0.3652,rise
-tv,Action & Adventure,2014,167,7.0803,7.2318,,no_previous_year
-tv,Action & Adventure,2015,155,6.9042,6.953,-0.1761,fall
-tv,Action & Adventure,2016,206,6.8251,6.9013,-0.0791,fall
-tv,Action & Adventure,2017,210,6.9928,7.1441,0.1677,rise
-tv,Action & Adventure,2018,254,7.1536,7.3444,0.1608,rise
-tv,Action & Adventure,2019,261,7.1604,7.3828,0.0068,rise
-tv,Action & Adventure,2020,260,7.094,7.2746,-0.0664,fall
-tv,Action & Adventure,2021,267,7.1425,7.3352,0.0485,rise
-tv,Action & Adventure,2022,270,6.933,7.0547,-0.2095,fall
-tv,Action & Adventure,2023,206,7.1686,7.3853,0.2356,rise
-tv,Animation,2014,240,7.0043,7.0137,,no_previous_year
-tv,Animation,2015,246,6.8182,6.7283,-0.1861,fall
-tv,Animation,2016,296,6.687,6.5953,-0.1312,fall
-tv,Animation,2017,286,6.931,6.8755,0.244,rise
-tv,Animation,2018,345,7.113,7.1595,0.182,rise
-tv,Animation,2019,287,7.1461,7.2548,0.0331,rise
-tv,Animation,2020,322,7.0567,7.0566,-0.0894,fall
-tv,Animation,2021,345,6.9803,6.9776,-0.0764,fall
-tv,Animation,2022,318,6.8196,6.7371,-0.1607,fall
-tv,Animation,2023,257,6.8426,6.7741,0.023,rise
-tv,Comedy,2014,459,6.9011,6.8224,,no_previous_year
-tv,Comedy,2015,540,6.8471,6.7212,-0.054,fall
-tv,Comedy,2016,623,6.7952,6.6961,-0.0519,fall
-tv,Comedy,2017,679,6.8404,6.7631,0.0452,rise
-tv,Comedy,2018,703,7.0085,7.005,0.1681,rise
-tv,Comedy,2019,701,7.077,7.0907,0.0685,rise
-tv,Comedy,2020,783,7.0628,7.0877,-0.0142,fall
-tv,Comedy,2021,824,6.8798,6.7939,-0.183,fall
-tv,Comedy,2022,886,6.87,6.8122,-0.0098,fall
-tv,Comedy,2023,556,7.0641,7.1021,0.1941,rise
-tv,Crime,2014,150,7.0281,7.0768,,no_previous_year
-tv,Crime,2015,180,6.9146,6.9573,-0.1135,fall
-tv,Crime,2016,206,6.9094,6.9625,-0.0052,fall
-tv,Crime,2017,265,6.9461,7.0382,0.0367,rise
-tv,Crime,2018,316,7.0077,7.0987,0.0616,rise
-tv,Crime,2019,346,7.0292,7.1794,0.0215,rise
-tv,Crime,2020,350,6.8879,6.9653,-0.1413,fall
-tv,Crime,2021,408,6.8772,6.9152,-0.0107,fall
-tv,Crime,2022,462,6.8456,6.9429,-0.0316,fall
-tv,Crime,2023,309,7.0556,7.2184,0.21,rise
-tv,Documentary,2014,294,7.0605,7.3098,,no_previous_year
-tv,Documentary,2015,333,6.8703,7.0136,-0.1902,fall
-tv,Documentary,2016,377,6.9933,7.2332,0.123,rise
-tv,Documentary,2017,401,6.8956,7.0844,-0.0977,fall
-tv,Documentary,2018,498,7.0786,7.38,0.183,rise
-tv,Documentary,2019,544,7.101,7.379,0.0224,rise
-tv,Documentary,2020,632,6.9865,7.2202,-0.1145,fall
-tv,Documentary,2021,747,6.829,6.9707,-0.1575,fall
-tv,Documentary,2022,776,6.6649,6.6978,-0.1641,fall
-tv,Documentary,2023,520,7.0588,7.3782,0.3939,rise
-tv,Drama,2014,654,6.9804,6.9648,,no_previous_year
-tv,Drama,2015,695,6.9518,6.9513,-0.0286,fall
-tv,Drama,2016,807,6.8474,6.8532,-0.1044,fall
-tv,Drama,2017,941,6.8502,6.8629,0.0028,rise
-tv,Drama,2018,1033,7.0069,7.061,0.1567,rise
-tv,Drama,2019,1120,7.0683,7.1535,0.0614,rise
-tv,Drama,2020,1221,6.9554,6.9751,-0.1129,fall
-tv,Drama,2021,1404,6.9383,6.9442,-0.0171,fall
-tv,Drama,2022,1642,6.8326,6.8015,-0.1057,fall
-tv,Drama,2023,1088,7.0717,7.1495,0.2391,rise
-tv,Family,2014,115,6.8812,6.7765,,no_previous_year
-tv,Family,2015,129,6.9757,7.0106,0.0945,rise
-tv,Family,2016,138,6.869,6.8643,-0.1067,fall
-tv,Family,2017,150,6.9917,7.1017,0.1227,rise
-tv,Family,2018,161,6.9015,6.8922,-0.0902,fall
-tv,Family,2019,181,7.1594,7.3481,0.2579,rise
-tv,Family,2020,187,7.0897,7.1547,-0.0697,fall
-tv,Family,2021,183,6.8633,6.807,-0.2264,fall
-tv,Family,2022,220,6.9184,6.928,0.0551,rise
-tv,Family,2023,94,7.4097,7.7338,0.4913,rise
-tv,History,2014,5,7.7654,8.08,,no_previous_year
-tv,History,2015,2,6.952,6.6,,insufficient_data
+movie,Action,2014,679,6.1564,5.8727,,no_previous_year
+movie,Action,2015,746,6.1919,5.9396,0.0355,rise
+movie,Action,2016,838,6.2296,6.1295,0.0377,rise
+movie,Action,2017,912,6.3142,6.2597,0.0846,rise
+movie,Action,2018,864,6.3073,6.2495,-0.0069,fall
+movie,Action,2019,839,6.4033,6.3607,0.096,rise
+movie,Action,2020,656,6.3843,6.4029,-0.019,fall
+movie,Action,2021,778,6.4692,6.5517,0.0849,rise
+movie,Action,2022,892,6.4406,6.6529,-0.0286,fall
+movie,Action,2023,770,6.4638,6.7674,0.0232,rise
+movie,Adventure,2014,425,6.2451,6.2571,,no_previous_year
+movie,Adventure,2015,404,6.2817,6.3573,0.0366,rise
+movie,Adventure,2016,431,6.2614,6.272,-0.0203,fall
+movie,Adventure,2017,433,6.3188,6.4848,0.0574,rise
+movie,Adventure,2018,434,6.3517,6.503,0.0329,rise
+movie,Adventure,2019,423,6.4404,6.6278,0.0887,rise
+movie,Adventure,2020,328,6.3867,6.7332,-0.0537,fall
+movie,Adventure,2021,364,6.5202,6.8663,0.1335,rise
+movie,Adventure,2022,419,6.4489,6.7437,-0.0713,fall
+movie,Adventure,2023,312,6.547,7.2684,0.0981,rise
+movie,Animation,2014,632,6.3903,6.492,,no_previous_year
+movie,Animation,2015,645,6.4181,6.624,0.0278,rise
+movie,Animation,2016,621,6.4055,6.6364,-0.0126,fall
+movie,Animation,2017,652,6.4351,6.7926,0.0296,rise
+movie,Animation,2018,621,6.4631,6.8105,0.028,rise
+movie,Animation,2019,700,6.5039,6.8351,0.0408,rise
+movie,Animation,2020,672,6.4752,6.866,-0.0287,fall
+movie,Animation,2021,683,6.5059,6.944,0.0307,rise
+movie,Animation,2022,541,6.5284,6.9763,0.0225,rise
+movie,Animation,2023,366,6.5195,7.2492,-0.0089,fall
+movie,Comedy,2014,2237,6.2114,5.8441,,no_previous_year
+movie,Comedy,2015,2332,6.2426,5.9186,0.0312,rise
+movie,Comedy,2016,2409,6.2475,5.942,0.0049,rise
+movie,Comedy,2017,2481,6.3019,6.0974,0.0544,rise
+movie,Comedy,2018,2511,6.327,6.145,0.0251,rise
+movie,Comedy,2019,2525,6.3583,6.2197,0.0313,rise
+movie,Comedy,2020,2086,6.3772,6.3169,0.0189,rise
+movie,Comedy,2021,2194,6.4039,6.3807,0.0267,rise
+movie,Comedy,2022,2721,6.4099,6.4714,0.006,rise
+movie,Comedy,2023,1856,6.4764,6.9286,0.0665,rise
+movie,Crime,2014,417,6.2336,5.9293,,no_previous_year
+movie,Crime,2015,519,6.2901,5.9705,0.0565,rise
+movie,Crime,2016,509,6.2688,5.9033,-0.0213,fall
+movie,Crime,2017,591,6.3398,6.1267,0.071,rise
+movie,Crime,2018,581,6.3624,6.2957,0.0226,rise
+movie,Crime,2019,624,6.3925,6.2723,0.0301,rise
+movie,Crime,2020,450,6.3606,6.2496,-0.0319,fall
+movie,Crime,2021,601,6.4304,6.4131,0.0698,rise
+movie,Crime,2022,636,6.4329,6.5701,0.0025,rise
+movie,Crime,2023,499,6.4769,6.7604,0.044,rise
+movie,Documentary,2014,2005,6.3217,6.7089,,no_previous_year
+movie,Documentary,2015,2212,6.3658,6.94,0.0441,rise
+movie,Documentary,2016,2147,6.3449,6.8271,-0.0209,fall
+movie,Documentary,2017,2506,6.3648,6.8737,0.0199,rise
+movie,Documentary,2018,2468,6.3736,6.9491,0.0088,rise
+movie,Documentary,2019,2711,6.384,6.9722,0.0104,rise
+movie,Documentary,2020,2618,6.3913,6.9652,0.0073,rise
+movie,Documentary,2021,2503,6.3996,7.0125,0.0083,rise
+movie,Documentary,2022,2443,6.3847,6.9436,-0.0149,fall
+movie,Documentary,2023,1603,6.3866,6.9511,0.0019,rise
+movie,Drama,2014,3230,6.292,5.9328,,no_previous_year
+movie,Drama,2015,3534,6.2914,5.9656,-0.0006,fall
+movie,Drama,2016,3587,6.3336,6.0611,0.0422,rise
+movie,Drama,2017,3953,6.3582,6.1849,0.0246,rise
+movie,Drama,2018,4074,6.3717,6.1948,0.0135,rise
+movie,Drama,2019,4189,6.4033,6.2816,0.0316,rise
+movie,Drama,2020,3407,6.4128,6.3099,0.0095,rise
+movie,Drama,2021,3570,6.4498,6.4811,0.037,rise
+movie,Drama,2022,3875,6.4419,6.5292,-0.0079,fall
+movie,Drama,2023,2615,6.474,6.8423,0.0321,rise
+movie,Family,2014,536,6.2871,6.254,,no_previous_year
+movie,Family,2015,503,6.316,6.2722,0.0289,rise
+movie,Family,2016,498,6.3264,6.2083,0.0104,rise
+movie,Family,2017,531,6.3804,6.5013,0.054,rise
+movie,Family,2018,516,6.3988,6.5662,0.0184,rise
+movie,Family,2019,520,6.5127,6.7838,0.1139,rise
+movie,Family,2020,424,6.4717,6.664,-0.041,fall
+movie,Family,2021,460,6.4623,6.5461,-0.0094,fall
+movie,Family,2022,489,6.4358,6.4922,-0.0265,fall
+movie,Family,2023,322,6.4702,6.9247,0.0344,rise
+movie,Fantasy,2014,349,6.2737,6.1137,,no_previous_year
+movie,Fantasy,2015,394,6.2598,5.9411,-0.0139,fall
+movie,Fantasy,2016,357,6.2767,6.1412,0.0169,rise
+movie,Fantasy,2017,430,6.363,6.4479,0.0863,rise
+movie,Fantasy,2018,456,6.3399,6.2999,-0.0231,fall
+movie,Fantasy,2019,455,6.4475,6.5895,0.1076,rise
+movie,Fantasy,2020,501,6.4012,6.5153,-0.0463,fall
+movie,Fantasy,2021,466,6.5263,6.8598,0.1251,rise
+movie,Fantasy,2022,502,6.4638,6.8657,-0.0625,fall
+movie,Fantasy,2023,328,6.4862,7.1033,0.0224,rise
+movie,History,2014,274,6.3462,6.4893,,no_previous_year
+movie,History,2015,291,6.3787,6.7931,0.0325,rise
+movie,History,2016,278,6.4248,6.8181,0.0461,rise
+movie,History,2017,309,6.4099,6.7998,-0.0149,fall
+movie,History,2018,342,6.398,6.7509,-0.0119,fall
+movie,History,2019,404,6.4634,6.9787,0.0654,rise
+movie,History,2020,307,6.4363,7.049,-0.0271,fall
+movie,History,2021,357,6.4358,6.9782,-0.0005,fall
+movie,History,2022,329,6.4655,7.0577,0.0297,rise
+movie,History,2023,216,6.4957,7.2172,0.0302,rise
+movie,Horror,2014,929,6.0305,5.0299,,no_previous_year
+movie,Horror,2015,973,6.0047,5.17,-0.0258,fall
+movie,Horror,2016,998,6.049,5.1634,0.0443,rise
+movie,Horror,2017,1146,6.1632,5.5127,0.1142,rise
+movie,Horror,2018,1157,6.2167,5.6452,0.0535,rise
+movie,Horror,2019,1233,6.2561,5.7669,0.0394,rise
+movie,Horror,2020,1233,6.3282,5.9898,0.0721,rise
+movie,Horror,2021,1115,6.3449,6.028,0.0167,rise
+movie,Horror,2022,1256,6.3756,6.2201,0.0307,rise
+movie,Horror,2023,826,6.4749,6.6992,0.0993,rise
+movie,Music,2014,633,6.3369,7.2493,,no_previous_year
+movie,Music,2015,615,6.4115,7.5718,0.0746,rise
+movie,Music,2016,600,6.3807,7.3723,-0.0308,fall
+movie,Music,2017,649,6.4176,7.5548,0.0369,rise
+movie,Music,2018,558,6.4199,7.5762,0.0023,rise
+movie,Music,2019,650,6.4053,7.5046,-0.0146,fall
+movie,Music,2020,605,6.4415,7.6589,0.0362,rise
+movie,Music,2021,634,6.4106,7.4472,-0.0309,fall
+movie,Music,2022,613,6.4121,7.5332,0.0015,rise
+movie,Music,2023,506,6.4513,7.8637,0.0392,rise
+movie,Mystery,2014,347,6.1945,5.7834,,no_previous_year
+movie,Mystery,2015,412,6.2442,5.9993,0.0497,rise
+movie,Mystery,2016,423,6.2163,5.8219,-0.0279,fall
+movie,Mystery,2017,431,6.2958,6.0,0.0795,rise
+movie,Mystery,2018,456,6.3164,6.174,0.0206,rise
+movie,Mystery,2019,434,6.4029,6.4017,0.0865,rise
+movie,Mystery,2020,376,6.3661,6.4604,-0.0368,fall
+movie,Mystery,2021,460,6.4853,6.9329,0.1192,rise
+movie,Mystery,2022,576,6.4299,6.7948,-0.0554,fall
+movie,Mystery,2023,434,6.4889,7.0667,0.059,rise
+movie,Romance,2014,886,6.2511,5.761,,no_previous_year
+movie,Romance,2015,978,6.2565,5.8336,0.0054,rise
+movie,Romance,2016,1086,6.2951,5.8475,0.0386,rise
+movie,Romance,2017,1009,6.3452,6.0168,0.0501,rise
+movie,Romance,2018,1031,6.3651,6.0247,0.0199,rise
+movie,Romance,2019,1046,6.4264,6.1461,0.0613,rise
+movie,Romance,2020,953,6.4638,6.2216,0.0374,rise
+movie,Romance,2021,986,6.4575,6.4395,-0.0063,fall
+movie,Romance,2022,1098,6.4525,6.4629,-0.005,fall
+movie,Romance,2023,742,6.4827,6.689,0.0302,rise
+movie,Science Fiction,2014,434,6.1211,5.7329,,no_previous_year
+movie,Science Fiction,2015,472,6.1668,5.8459,0.0457,rise
+movie,Science Fiction,2016,475,6.1621,5.841,-0.0047,fall
+movie,Science Fiction,2017,513,6.1995,5.9331,0.0374,rise
+movie,Science Fiction,2018,466,6.2133,5.9821,0.0138,rise
+movie,Science Fiction,2019,485,6.3073,6.0647,0.094,rise
+movie,Science Fiction,2020,452,6.3221,6.2545,0.0148,rise
+movie,Science Fiction,2021,538,6.3755,6.4303,0.0534,rise
+movie,Science Fiction,2022,481,6.4209,6.5825,0.0454,rise
+movie,Science Fiction,2023,363,6.4588,6.9414,0.0379,rise
+movie,TV Movie,2014,371,6.2475,6.1183,,no_previous_year
+movie,TV Movie,2015,419,6.2705,6.1445,0.023,rise
+movie,TV Movie,2016,444,6.28,6.1161,0.0095,rise
+movie,TV Movie,2017,496,6.3119,6.2061,0.0319,rise
+movie,TV Movie,2018,493,6.3559,6.4111,0.044,rise
+movie,TV Movie,2019,598,6.4372,6.4322,0.0813,rise
+movie,TV Movie,2020,471,6.4586,6.5467,0.0214,rise
+movie,TV Movie,2021,696,6.4401,6.4867,-0.0185,fall
+movie,TV Movie,2022,678,6.4118,6.3962,-0.0283,fall
+movie,TV Movie,2023,382,6.3993,6.4565,-0.0125,fall
+movie,Thriller,2014,935,6.0954,5.4371,,no_previous_year
+movie,Thriller,2015,1051,6.1285,5.5712,0.0331,rise
+movie,Thriller,2016,1151,6.1292,5.5207,0.0007,rise
+movie,Thriller,2017,1212,6.219,5.7342,0.0898,rise
+movie,Thriller,2018,1216,6.2797,5.9603,0.0607,rise
+movie,Thriller,2019,1255,6.3145,5.9879,0.0348,rise
+movie,Thriller,2020,1082,6.314,5.9791,-0.0005,fall
+movie,Thriller,2021,1280,6.3985,6.2813,0.0845,rise
+movie,Thriller,2022,1481,6.404,6.3734,0.0055,rise
+movie,Thriller,2023,1107,6.4668,6.6397,0.0628,rise
+movie,War,2014,121,6.3083,6.4903,,no_previous_year
+movie,War,2015,118,6.3396,6.5044,0.0313,rise
+movie,War,2016,137,6.4052,6.7232,0.0656,rise
+movie,War,2017,141,6.4122,6.5485,0.007,rise
+movie,War,2018,141,6.3532,6.6188,-0.059,fall
+movie,War,2019,159,6.4616,6.8985,0.1084,rise
+movie,War,2020,116,6.4537,7.0907,-0.0079,fall
+movie,War,2021,123,6.4558,7.0828,0.0021,rise
+movie,War,2022,117,6.4163,6.8759,-0.0395,fall
+movie,War,2023,91,6.5086,7.2161,0.0923,rise
+movie,Western,2014,33,6.2288,5.8518,,no_previous_year
+movie,Western,2015,33,6.2705,5.5411,0.0417,rise
+movie,Western,2016,40,6.0672,5.7582,-0.2033,fall
+movie,Western,2017,51,6.3218,6.5841,0.2546,rise
+movie,Western,2018,50,6.1154,5.4423,-0.2064,fall
+movie,Western,2019,46,6.1964,5.7591,0.081,rise
+movie,Western,2020,40,6.4442,6.992,0.2478,rise
+movie,Western,2021,53,6.429,6.5133,-0.0152,fall
+movie,Western,2022,51,6.3313,6.3213,-0.0977,fall
+movie,Western,2023,50,6.4061,7.0221,0.0748,rise
+tv,Action & Adventure,2014,167,7.0647,7.2318,,no_previous_year
+tv,Action & Adventure,2015,155,7.0099,6.953,-0.0548,fall
+tv,Action & Adventure,2016,206,6.9329,6.9013,-0.077,fall
+tv,Action & Adventure,2017,210,6.9875,7.1441,0.0546,rise
+tv,Action & Adventure,2018,254,7.0904,7.3444,0.1029,rise
+tv,Action & Adventure,2019,261,7.1009,7.3828,0.0105,rise
+tv,Action & Adventure,2020,260,7.0874,7.2746,-0.0135,fall
+tv,Action & Adventure,2021,267,7.129,7.3352,0.0416,rise
+tv,Action & Adventure,2022,270,7.0093,7.0547,-0.1197,fall
+tv,Action & Adventure,2023,206,7.0978,7.3853,0.0885,rise
+tv,Animation,2014,240,7.0498,7.0137,,no_previous_year
+tv,Animation,2015,246,6.9894,6.7283,-0.0604,fall
+tv,Animation,2016,296,6.8959,6.5953,-0.0935,fall
+tv,Animation,2017,286,7.0309,6.8755,0.135,rise
+tv,Animation,2018,345,7.0996,7.1595,0.0687,rise
+tv,Animation,2019,287,7.1147,7.2548,0.0151,rise
+tv,Animation,2020,322,7.1133,7.0566,-0.0014,fall
+tv,Animation,2021,345,7.0741,6.9776,-0.0392,fall
+tv,Animation,2022,318,6.983,6.7371,-0.0911,fall
+tv,Animation,2023,257,6.9684,6.7741,-0.0146,fall
+tv,Comedy,2014,459,6.978,6.8224,,no_previous_year
+tv,Comedy,2015,540,6.9712,6.7212,-0.0068,fall
+tv,Comedy,2016,623,6.9225,6.6961,-0.0487,fall
+tv,Comedy,2017,679,6.938,6.7631,0.0155,rise
+tv,Comedy,2018,703,7.0105,7.005,0.0725,rise
+tv,Comedy,2019,701,7.0553,7.0907,0.0448,rise
+tv,Comedy,2020,783,7.0394,7.0877,-0.0159,fall
+tv,Comedy,2021,824,6.9748,6.7939,-0.0646,fall
+tv,Comedy,2022,886,6.9523,6.8122,-0.0225,fall
+tv,Comedy,2023,556,7.0136,7.1021,0.0613,rise
+tv,Crime,2014,150,7.0206,7.0768,,no_previous_year
+tv,Crime,2015,180,6.9672,6.9573,-0.0534,fall
+tv,Crime,2016,206,6.9594,6.9625,-0.0078,fall
+tv,Crime,2017,265,6.9744,7.0382,0.015,rise
+tv,Crime,2018,316,7.0164,7.0987,0.042,rise
+tv,Crime,2019,346,6.9992,7.1794,-0.0172,fall
+tv,Crime,2020,350,6.9531,6.9653,-0.0461,fall
+tv,Crime,2021,408,6.9717,6.9152,0.0186,rise
+tv,Crime,2022,462,6.9155,6.9429,-0.0562,fall
+tv,Crime,2023,309,6.9968,7.2184,0.0813,rise
+tv,Documentary,2014,294,6.978,7.3098,,no_previous_year
+tv,Documentary,2015,333,6.924,7.0136,-0.054,fall
+tv,Documentary,2016,377,6.9489,7.2332,0.0249,rise
+tv,Documentary,2017,401,6.9173,7.0844,-0.0316,fall
+tv,Documentary,2018,498,6.9663,7.38,0.049,rise
+tv,Documentary,2019,544,6.9854,7.379,0.0191,rise
+tv,Documentary,2020,632,6.9375,7.2202,-0.0479,fall
+tv,Documentary,2021,747,6.8999,6.9707,-0.0376,fall
+tv,Documentary,2022,776,6.854,6.6978,-0.0459,fall
+tv,Documentary,2023,520,6.9544,7.3782,0.1004,rise
+tv,Drama,2014,654,7.0088,6.9648,,no_previous_year
+tv,Drama,2015,695,6.9996,6.9513,-0.0092,fall
+tv,Drama,2016,807,6.9274,6.8532,-0.0722,fall
+tv,Drama,2017,941,6.9325,6.8629,0.0051,rise
+tv,Drama,2018,1033,7.022,7.061,0.0895,rise
+tv,Drama,2019,1120,7.0519,7.1535,0.0299,rise
+tv,Drama,2020,1221,7.0084,6.9751,-0.0435,fall
+tv,Drama,2021,1404,6.9988,6.9442,-0.0096,fall
+tv,Drama,2022,1642,6.9512,6.8015,-0.0476,fall
+tv,Drama,2023,1088,7.0226,7.1495,0.0714,rise
+tv,Family,2014,115,6.9821,6.7765,,no_previous_year
+tv,Family,2015,129,6.9887,7.0106,0.0066,rise
+tv,Family,2016,138,6.9428,6.8643,-0.0459,fall
+tv,Family,2017,150,6.9583,7.1017,0.0155,rise
+tv,Family,2018,161,6.9712,6.8922,0.0129,rise
+tv,Family,2019,181,7.023,7.3481,0.0518,rise
+tv,Family,2020,187,7.0212,7.1547,-0.0018,fall
+tv,Family,2021,183,6.964,6.807,-0.0572,fall
+tv,Family,2022,220,6.97,6.928,0.006,rise
+tv,Family,2023,94,7.093,7.7338,0.123,rise
+tv,History,2014,5,7.3351,8.08,,no_previous_year
+tv,History,2015,2,7.3061,6.6,,insufficient_data
 tv,History,2016,0,,,,insufficient_data
 tv,History,2017,0,,,,insufficient_data
 tv,History,2018,0,,,,insufficient_data
@@ -269,18 +269,18 @@ tv,History,2020,0,,,,insufficient_data
 tv,History,2021,0,,,,insufficient_data
 tv,History,2022,0,,,,insufficient_data
 tv,History,2023,0,,,,insufficient_data
-tv,Kids,2014,61,6.9196,6.8884,,no_previous_year
-tv,Kids,2015,78,6.8376,6.6493,-0.082,fall
-tv,Kids,2016,76,6.4343,5.9584,-0.4033,fall
-tv,Kids,2017,82,6.8908,6.8079,0.4565,rise
-tv,Kids,2018,100,7.0474,6.9779,0.1566,rise
-tv,Kids,2019,105,7.2254,7.3691,0.178,rise
-tv,Kids,2020,127,7.1008,7.0644,-0.1246,fall
-tv,Kids,2021,98,7.004,6.9543,-0.0968,fall
-tv,Kids,2022,69,6.5713,6.0331,-0.4327,fall
-tv,Kids,2023,44,7.0161,6.9066,0.4448,rise
+tv,Kids,2014,61,6.95,6.8884,,no_previous_year
+tv,Kids,2015,78,6.971,6.6493,0.021,rise
+tv,Kids,2016,76,6.8449,5.9584,-0.1261,fall
+tv,Kids,2017,82,6.9416,6.8079,0.0967,rise
+tv,Kids,2018,100,7.0192,6.9779,0.0776,rise
+tv,Kids,2019,105,7.0397,7.3691,0.0205,rise
+tv,Kids,2020,127,7.0582,7.0644,0.0185,rise
+tv,Kids,2021,98,7.0024,6.9543,-0.0558,fall
+tv,Kids,2022,69,6.9631,6.0331,-0.0393,fall
+tv,Kids,2023,44,7.0209,6.9066,0.0578,rise
 tv,Musical,2014,0,,,,insufficient_data
-tv,Musical,2015,1,7.2798,7.268,,insufficient_data
+tv,Musical,2015,1,7.256,7.268,,insufficient_data
 tv,Musical,2016,0,,,,insufficient_data
 tv,Musical,2017,0,,,,insufficient_data
 tv,Musical,2018,0,,,,insufficient_data
@@ -289,39 +289,39 @@ tv,Musical,2020,0,,,,insufficient_data
 tv,Musical,2021,0,,,,insufficient_data
 tv,Musical,2022,0,,,,insufficient_data
 tv,Musical,2023,0,,,,insufficient_data
-tv,Mystery,2014,111,7.123,7.1958,,no_previous_year
-tv,Mystery,2015,123,6.9782,7.0835,-0.1448,fall
-tv,Mystery,2016,155,6.9223,7.0296,-0.0559,fall
-tv,Mystery,2017,186,6.9219,7.0226,-0.0004,fall
-tv,Mystery,2018,226,6.9864,7.1284,0.0645,rise
-tv,Mystery,2019,247,7.0183,7.1387,0.0319,rise
-tv,Mystery,2020,305,7.0062,7.1066,-0.0121,fall
-tv,Mystery,2021,338,6.8805,6.8775,-0.1257,fall
-tv,Mystery,2022,333,6.8478,6.9004,-0.0327,fall
-tv,Mystery,2023,231,7.063,7.1834,0.2152,rise
-tv,News,2014,13,7.2725,7.2923,,no_previous_year
-tv,News,2015,10,7.2259,7.6356,-0.0466,fall
-tv,News,2016,13,7.0565,7.2401,-0.1694,fall
-tv,News,2017,23,6.8458,6.587,-0.2107,fall
-tv,News,2018,12,7.0547,7.021,0.2089,rise
-tv,News,2019,18,6.9515,6.9629,-0.1032,fall
-tv,News,2020,12,7.5954,8.1354,0.6439,rise
-tv,News,2021,19,6.8984,7.0744,-0.697,fall
-tv,News,2022,29,5.9945,5.3057,-0.9039,fall
-tv,News,2023,11,6.7287,6.6636,0.7342,rise
-tv,Reality,2014,208,6.8369,6.7939,,no_previous_year
-tv,Reality,2015,233,6.6688,6.3876,-0.1681,fall
-tv,Reality,2016,279,6.7801,6.581,0.1113,rise
-tv,Reality,2017,294,6.8615,6.7455,0.0814,rise
-tv,Reality,2018,304,7.1566,7.2017,0.2951,rise
-tv,Reality,2019,372,7.1945,7.2457,0.0379,rise
-tv,Reality,2020,354,6.9821,6.9059,-0.2124,fall
-tv,Reality,2021,500,6.8982,6.7791,-0.0839,fall
-tv,Reality,2022,522,6.7165,6.5193,-0.1817,fall
-tv,Reality,2023,298,6.9187,6.8167,0.2022,rise
-tv,Romance,2014,23,6.7177,6.4432,,no_previous_year
-tv,Romance,2015,35,6.7439,6.425,0.0262,rise
-tv,Romance,2016,3,6.711,6.4333,,insufficient_data
+tv,Mystery,2014,111,7.0758,7.1958,,no_previous_year
+tv,Mystery,2015,123,6.984,7.0835,-0.0918,fall
+tv,Mystery,2016,155,6.9456,7.0296,-0.0384,fall
+tv,Mystery,2017,186,6.9566,7.0226,0.011,rise
+tv,Mystery,2018,226,6.9732,7.1284,0.0166,rise
+tv,Mystery,2019,247,7.0146,7.1387,0.0414,rise
+tv,Mystery,2020,305,7.027,7.1066,0.0124,rise
+tv,Mystery,2021,338,6.9986,6.8775,-0.0284,fall
+tv,Mystery,2022,333,6.9243,6.9004,-0.0743,fall
+tv,Mystery,2023,231,7.0179,7.1834,0.0936,rise
+tv,News,2014,13,7.0958,7.2923,,no_previous_year
+tv,News,2015,10,6.8871,7.6356,-0.2087,fall
+tv,News,2016,13,6.8601,7.2401,-0.027,fall
+tv,News,2017,23,6.9047,6.587,0.0446,rise
+tv,News,2018,12,6.9745,7.021,0.0698,rise
+tv,News,2019,18,6.9054,6.9629,-0.0691,fall
+tv,News,2020,12,7.0462,8.1354,0.1408,rise
+tv,News,2021,19,6.8717,7.0744,-0.1745,fall
+tv,News,2022,29,6.6628,5.3057,-0.2089,fall
+tv,News,2023,11,6.8808,6.6636,0.218,rise
+tv,Reality,2014,208,6.8651,6.7939,,no_previous_year
+tv,Reality,2015,233,6.8815,6.3876,0.0164,rise
+tv,Reality,2016,279,6.8977,6.581,0.0162,rise
+tv,Reality,2017,294,6.9223,6.7455,0.0246,rise
+tv,Reality,2018,304,7.0084,7.2017,0.0861,rise
+tv,Reality,2019,372,7.0212,7.2457,0.0128,rise
+tv,Reality,2020,354,6.9514,6.9059,-0.0698,fall
+tv,Reality,2021,500,6.9185,6.7791,-0.0329,fall
+tv,Reality,2022,522,6.869,6.5193,-0.0495,fall
+tv,Reality,2023,298,6.9369,6.8167,0.0679,rise
+tv,Romance,2014,23,6.8523,6.4432,,no_previous_year
+tv,Romance,2015,35,6.9421,6.425,0.0898,rise
+tv,Romance,2016,3,6.8603,6.4333,,insufficient_data
 tv,Romance,2017,0,,,,insufficient_data
 tv,Romance,2018,0,,,,insufficient_data
 tv,Romance,2019,0,,,,insufficient_data
@@ -329,53 +329,53 @@ tv,Romance,2020,0,,,,insufficient_data
 tv,Romance,2021,0,,,,insufficient_data
 tv,Romance,2022,0,,,,insufficient_data
 tv,Romance,2023,0,,,,insufficient_data
-tv,Sci-Fi & Fantasy,2014,145,7.0139,7.0863,,no_previous_year
-tv,Sci-Fi & Fantasy,2015,146,6.8746,6.9408,-0.1393,fall
-tv,Sci-Fi & Fantasy,2016,199,6.9142,7.0028,0.0396,rise
-tv,Sci-Fi & Fantasy,2017,212,6.9732,7.1126,0.059,rise
-tv,Sci-Fi & Fantasy,2018,248,7.1217,7.2905,0.1485,rise
-tv,Sci-Fi & Fantasy,2019,230,7.0394,7.1515,-0.0823,fall
-tv,Sci-Fi & Fantasy,2020,267,7.1733,7.3254,0.1339,rise
-tv,Sci-Fi & Fantasy,2021,278,6.987,7.0359,-0.1863,fall
-tv,Sci-Fi & Fantasy,2022,286,6.8695,6.9094,-0.1175,fall
-tv,Sci-Fi & Fantasy,2023,215,7.0472,7.1609,0.1777,rise
-tv,Soap,2014,79,6.8658,6.4764,,no_previous_year
-tv,Soap,2015,32,6.9014,6.3368,0.0356,rise
-tv,Soap,2016,45,6.8858,6.4114,-0.0156,fall
-tv,Soap,2017,49,6.5791,5.9609,-0.3067,fall
-tv,Soap,2018,49,6.615,5.9783,0.0359,rise
-tv,Soap,2019,36,6.7436,6.2454,0.1286,rise
-tv,Soap,2020,50,6.7739,6.2647,0.0303,rise
-tv,Soap,2021,51,6.5399,5.8176,-0.234,fall
-tv,Soap,2022,46,7.0184,6.5932,0.4785,rise
-tv,Soap,2023,20,7.1343,6.6356,0.1159,rise
-tv,Talk,2014,54,6.859,6.7133,,no_previous_year
-tv,Talk,2015,49,6.9125,6.709,0.0535,rise
-tv,Talk,2016,66,7.0081,6.8949,0.0956,rise
-tv,Talk,2017,88,6.8314,6.6528,-0.1767,fall
-tv,Talk,2018,90,6.7955,6.5236,-0.0359,fall
-tv,Talk,2019,79,6.7951,6.5952,-0.0004,fall
-tv,Talk,2020,99,7.1526,7.1487,0.3575,rise
-tv,Talk,2021,115,6.9986,6.8381,-0.154,fall
-tv,Talk,2022,105,6.6721,6.2843,-0.3265,fall
-tv,Talk,2023,38,6.7894,6.5605,0.1173,rise
-tv,War & Politics,2014,51,7.3293,7.812,,no_previous_year
-tv,War & Politics,2015,32,6.952,7.1823,-0.3773,fall
-tv,War & Politics,2016,42,6.7598,7.0362,-0.1922,fall
-tv,War & Politics,2017,49,6.9545,7.2047,0.1947,rise
-tv,War & Politics,2018,53,7.0319,7.3906,0.0774,rise
-tv,War & Politics,2019,59,7.2428,7.6026,0.2109,rise
-tv,War & Politics,2020,65,7.1324,7.62,-0.1104,fall
-tv,War & Politics,2021,46,7.2205,7.6088,0.0881,rise
-tv,War & Politics,2022,55,6.6869,6.894,-0.5336,fall
-tv,War & Politics,2023,43,7.2407,7.8118,0.5538,rise
-tv,Western,2014,6,6.4425,6.0862,,no_previous_year
-tv,Western,2015,3,5.9367,5.3333,,insufficient_data
-tv,Western,2016,6,7.4479,7.2708,,insufficient_data
-tv,Western,2017,4,7.2017,6.7588,,insufficient_data
-tv,Western,2018,7,6.7829,6.3571,,insufficient_data
-tv,Western,2019,3,5.9744,5.1,,insufficient_data
-tv,Western,2020,3,7.2937,7.25,,insufficient_data
-tv,Western,2021,4,6.7008,6.0025,,insufficient_data
-tv,Western,2022,7,7.2946,7.0009,,insufficient_data
-tv,Western,2023,8,6.9336,6.4845,-0.361,fall
+tv,Sci-Fi & Fantasy,2014,145,7.0657,7.0863,,no_previous_year
+tv,Sci-Fi & Fantasy,2015,146,6.9684,6.9408,-0.0973,fall
+tv,Sci-Fi & Fantasy,2016,199,6.9806,7.0028,0.0122,rise
+tv,Sci-Fi & Fantasy,2017,212,6.9779,7.1126,-0.0027,fall
+tv,Sci-Fi & Fantasy,2018,248,7.0641,7.2905,0.0862,rise
+tv,Sci-Fi & Fantasy,2019,230,7.0819,7.1515,0.0178,rise
+tv,Sci-Fi & Fantasy,2020,267,7.1552,7.3254,0.0733,rise
+tv,Sci-Fi & Fantasy,2021,278,7.0848,7.0359,-0.0704,fall
+tv,Sci-Fi & Fantasy,2022,286,6.9759,6.9094,-0.1089,fall
+tv,Sci-Fi & Fantasy,2023,215,7.0417,7.1609,0.0658,rise
+tv,Soap,2014,79,6.9776,6.4764,,no_previous_year
+tv,Soap,2015,32,7.068,6.3368,0.0904,rise
+tv,Soap,2016,45,7.0077,6.4114,-0.0603,fall
+tv,Soap,2017,49,6.926,5.9609,-0.0817,fall
+tv,Soap,2018,49,6.9193,5.9783,-0.0067,fall
+tv,Soap,2019,36,7.0121,6.2454,0.0928,rise
+tv,Soap,2020,50,6.9843,6.2647,-0.0278,fall
+tv,Soap,2021,51,6.8913,5.8176,-0.093,fall
+tv,Soap,2022,46,7.0514,6.5932,0.1601,rise
+tv,Soap,2023,20,7.145,6.6356,0.0936,rise
+tv,Talk,2014,54,6.8924,6.7133,,no_previous_year
+tv,Talk,2015,49,6.9119,6.709,0.0195,rise
+tv,Talk,2016,66,6.9522,6.8949,0.0403,rise
+tv,Talk,2017,88,6.8754,6.6528,-0.0768,fall
+tv,Talk,2018,90,6.8849,6.5236,0.0095,rise
+tv,Talk,2019,79,6.8551,6.5952,-0.0298,fall
+tv,Talk,2020,99,6.9745,7.1487,0.1194,rise
+tv,Talk,2021,115,6.9563,6.8381,-0.0182,fall
+tv,Talk,2022,105,6.8654,6.2843,-0.0909,fall
+tv,Talk,2023,38,6.8918,6.5605,0.0264,rise
+tv,War & Politics,2014,51,7.0743,7.812,,no_previous_year
+tv,War & Politics,2015,32,6.9828,7.1823,-0.0915,fall
+tv,War & Politics,2016,42,6.8573,7.0362,-0.1255,fall
+tv,War & Politics,2017,49,6.9701,7.2047,0.1128,rise
+tv,War & Politics,2018,53,6.9712,7.3906,0.0011,rise
+tv,War & Politics,2019,59,7.1158,7.6026,0.1446,rise
+tv,War & Politics,2020,65,6.9535,7.62,-0.1623,fall
+tv,War & Politics,2021,46,7.0476,7.6088,0.0941,rise
+tv,War & Politics,2022,55,6.8332,6.894,-0.2144,fall
+tv,War & Politics,2023,43,6.9978,7.8118,0.1646,rise
+tv,Western,2014,6,6.6896,6.0862,,no_previous_year
+tv,Western,2015,3,6.5844,5.3333,,insufficient_data
+tv,Western,2016,6,7.4044,7.2708,,insufficient_data
+tv,Western,2017,4,7.2776,6.7588,,insufficient_data
+tv,Western,2018,7,7.0661,6.3571,,insufficient_data
+tv,Western,2019,3,6.7121,5.1,,insufficient_data
+tv,Western,2020,3,7.1633,7.25,,insufficient_data
+tv,Western,2021,4,7.2354,6.0025,,insufficient_data
+tv,Western,2022,7,7.3665,7.0009,,insufficient_data
+tv,Western,2023,8,7.0528,6.4845,-0.3137,fall
