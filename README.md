@@ -1,6 +1,6 @@
 # Curatr
 
-### Movie & TV Rating Analysis · Team rei-nexus
+### Movie & Series Rating Analysis · Team rei-nexus
 
 **Ratan · Lochan · Vivek · Nagendra**
 DAE Capstone · Second-year Data Science
